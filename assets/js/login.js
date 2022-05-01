@@ -58,6 +58,7 @@ $(function () {
                 }
                 layer.msg("登录成功")
                 //登录成功后用localStrage存储token字符串,http申请一些有权限的接口需要通过请求头Authorization把字符串传过去
+                console.log(res.token)
                 localStorage.setItem("token",res.token)
                 //登录成功后跳转页面到index.html
                 location.href="./index.html"
