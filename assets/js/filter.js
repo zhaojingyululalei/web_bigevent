@@ -10,6 +10,7 @@ $.ajaxPrefilter(function(options){//option就是请求的配置对象
     }
     //挂载complete函数，只要身份验证失败就清空token跳转到login
     options.complete=function(res){
+        //  console.log(res)
         if(res.responseJSON.status===1){
             //如果身份认证失败了
             //清空localStorag中的token
