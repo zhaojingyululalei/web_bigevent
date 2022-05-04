@@ -45,7 +45,8 @@ $(function () {
                 height: 100
             })
             .toDataURL('image/png')       // 将 Canvas 画布上的内容，转化为 base64 格式的字符串
-        //点击确定按钮上传裁剪区的图片
+        console.log(dataURL)
+            //点击确定按钮上传裁剪区的图片
         $.ajax({
             method: "POST",
             url: "my/update/avatar",
